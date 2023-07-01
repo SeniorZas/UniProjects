@@ -1,0 +1,25 @@
+{% extends "plantillaBase.html" %}
+{% load static %}
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+{% block title %} SansaCloud {%endblock%}
+
+{%block content%}
+<h1>Bienvenid@ a SansaCloud!</h1>
+<div class="field" id="searchform">
+    <input type="text" id="searchterm" placeholder="Qué deseas buscar?"/>
+    <button type="button" id="search">Buscar!</button>
+</div>
+<p></p>
+
+<h1>Recursos:</h1>
+<p>
+    <ul>
+            <li><a href="ramos.html" class="index_text">Ramos</a></li>
+            <li><a href="carreras.html" class="index_text">Carreras</a></li>
+            <li><a href="foro.html" class="index_text">Foro USM</a></li>
+    </ul>
+
+</p>
+{%endblock%}

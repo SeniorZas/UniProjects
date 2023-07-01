@@ -1,0 +1,50 @@
+{% load static %}
+<html>
+<head>
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{%static 'favicon.ico'%}">
+    <link rel="stylesheet" href="{% static './css/style.css' %}" />
+    <script src="{% static './JavaScript/semestres.js' %}" type="application/javascript"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <script src="{% static './JavaScript/main.js' %}" type="application/javascript"></script>
+    <script src="{% static './JavaScript/FormValidator.js' %}" type="application/javascript"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+</head>
+<body>
+    <h1 id="titular"><a class="hv" href="home.html"> >SansaCloud</a><a href="logout.html"><img id="logoutImg" src="{% static 'logout.png' %}"></a></h1>
+    {% block content %} {% endblock %}
+    <footer id="footer" class="pieDePagina">
+        <div class="grupo1">
+            <div class="box">
+                <figure>
+                    <a href="home.html">
+                        <img class="rounded-corners" src="{% static './favicon.png' %}" alt="Logo SansaCloud">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Somos un equipo de informáticos dispuestos a ayudar a tod@s l@s sansan@s a encontrar su material
+                    de estudio en un sólo lugar, además de poder compartir opiniones y hacer preguntas sobre lo que quieran
+                </p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.instagram.com/tio_yuichi/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.instagram.com/dead.vibes.x/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.instagram.com/joaquin__fuentez/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.instagram.com/sebulais/" target="_blank" class="fa fa-instagram"></a>
+                    <pre>Adán         Alonso      Joaquín    Sebastián</pre>
+                </div>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2022 <b>SansaCloud</b> - Todos Los Derechos Reservados.</small>
+        </div>
+    </footer>
+</body>
+</html>
