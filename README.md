@@ -1,2 +1,2 @@
 # UniProjects
-All of my Uni Projects, totall variety 
+All of my Uni Projects, total variety 
